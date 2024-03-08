@@ -65,14 +65,17 @@ button {
 
 .btn {
     --height: 62px;
+
+    width: 170px;
     height: var(--height);
-    padding: 16px 37px;
+    display: block;
     text-align: center;
     background: var(--secondary-bg-color);
 
     color: #fdfdfd;
     font-weight: 700;
     font-size: 1.8rem;
+    line-height: var(--height);
 }
 
 .btn:hover {
@@ -175,6 +178,8 @@ button {
 }
 
 .hero-active {
+    display: flex;
+    align-items: center;
     margin-top: 50px;
 }
 
@@ -270,6 +275,7 @@ button {
 
 /* Project */
 .project {
+    margin-top: 140px;
     background: var(--secondary-bg-color);
 }
 
@@ -352,15 +358,127 @@ button {
     color: inherit;
 }
 
+/*  Inte */
+.inte {
+    margin-top: 140px;
+}
+
+.inte__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inte__desc {
+    width: 570px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.inte-data {
+    display: flex;
+    gap: 146px;
+    margin-top: 70px;
+    padding: 20px 0;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.inte-data__num {
+    font-weight: 500;
+    font-size: 5.6rem;
+    line-height: 1.35;
+}
+
+.inte-data__desc {
+    font-size: 1.8rem;
+    line-height: 1.67;
+}
+
+/* Contact */
+.contact {
+    margin-top: 160px;
+}
+
+.contact__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact__desc {
+    width: 528px;
+    margin: 20px 0 30px;
+    text-align: center;
+}
+
+.contact__link {
+    margin-bottom: 70px;
+    color: var(--secondary-bg-color);
+    font-weight: 500;
+    font-size: 3.2rem;
+    line-height: 1.25;
+}
+
+/* Service */
+.service {
+    position: relative;
+    margin-top: 140px;
+}
+
+.service::after {
+    content: url(../img/service-bg-right.png);
+    position: absolute;
+    top: 0;
+    right: 115px;
+    z-index: 1;
+}
+
+.service__inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 68px 0;
+    background: var(--primary-bg-color);
+    overflow: hidden;
+}
+
+.service__inner::after {
+    content: url(../img/service-bg-left.png);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.service__inner::before {
+    content: url(../img/service-bg-center.png);
+    position: absolute;
+    bottom: 0;
+    left: 220px;
+    z-index: 1;
+}
+
+.service__icon {
+    margin-bottom: 15px;
+}
+
+.service__desc {
+    width: 570px;
+    margin: 20px 0 39px;
+    text-align: center;
+}
+
 /* Footer */
 .footer {
     margin-top: 50px;
 }
 
 .footer__separate {
-    width: 100%;
+    width: 90%;
     height: 1px;
-    margin: 32px 0 18px;
+    margin: 32px auto 18px;
     background: #0c072022;
 }
 
